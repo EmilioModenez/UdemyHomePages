@@ -1,0 +1,67 @@
+@font-face {
+  src: url("../fonts/JuraBook.ttf");
+  font-family: "JuraBook";
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  width: 100%;
+  background-color: #2574a9;
+}
+.container{
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-areas: 
+      "lgo ... nav";
+  grid-template-columns: 
+      auto 1fr auto;
+  align-content: center;
+}
+.logo{
+  grid-area: lgo;
+}
+.logo img{
+  width: 320px;
+}
+.nav-bar{
+  grid-area: nav;
+  font-size: 18px;
+}
+.nav-bar ul{
+  display: grid;
+}
+.nav-bar a {
+  font-size: 1em ;
+  font-family: "JuraBook";
+}
+main{
+  font-size: 20px;
+}
+section{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: "JuraBook";
+  font-size: 2em;
+  color: #2574a9;
+}
+section:nth-child(odd){
+  height: 100vh; /*viewport height*/
+  background-color: #cae1f1;
+}
+section:nth-child(even){
+  height: 100vh;
+  background-color: #b7d5eb;
+}
